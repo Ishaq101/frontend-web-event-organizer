@@ -3,7 +3,7 @@ interface IRegister {
     username: string;
     email: string;
     password: string;
-    passwordConfirm: string;
+    confirmPassword: string;
 }
 
 export type { IRegister };

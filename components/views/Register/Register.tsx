@@ -107,8 +107,8 @@ const Register = () => {
                                             onClick={() => handleVisiblePassword("password")}
                                         >
                                             {visiblePassword.password ? 
-                                                <FaEye className="pointer-events-none text-xl text-default-400"/> : 
-                                                <IoEyeOff className="pointer-events-none text-xl text-default-400"/>
+                                                <IoEyeOff className="pointer-events-none text-xl text-default-400"/> :
+                                                <FaEye className="pointer-events-none text-xl text-default-400"/>  
                                             }
                                         </button>
                                     }
@@ -119,28 +119,28 @@ const Register = () => {
                         />
                         
                         <Controller
-                            name="passwordConfirm"
+                            name="confirmPassword"
                             control={control}
                             render={({ field }) => (
                                 <Input 
                                     {...field}
                                     label="Confirm Password" 
-                                    type={visiblePassword.passwordConfirm ? "text":"password"} 
+                                    type={visiblePassword.confirmPassword ? "text":"password"} 
                                     variant="bordered" 
                                     endContent={
                                         <button 
                                             className="focus:outline-none"
                                             type="button"
-                                            onClick={() => handleVisiblePassword("passwordConfirm")}
+                                            onClick={() => handleVisiblePassword("confirmPassword")}
                                         >
-                                            {visiblePassword.passwordConfirm ? 
-                                                <FaEye className="pointer-events-none text-xl text-default-400"/> : 
-                                                <IoEyeOff className="pointer-events-none text-xl text-default-400"/>
+                                            {visiblePassword.confirmPassword ? 
+                                                <IoEyeOff className="pointer-events-none text-xl text-default-400"/> :
+                                                <FaEye className="pointer-events-none text-xl text-default-400"/> 
                                             }
                                         </button>
                                     }
-                                    isInvalid={!!errors.passwordConfirm}
-                                    errorMessage={errors.passwordConfirm ? errors.passwordConfirm.message : ""}
+                                    isInvalid={!!errors.confirmPassword}
+                                    errorMessage={errors.confirmPassword ? errors.confirmPassword.message : ""}
                                 />
                             )}
                         />
