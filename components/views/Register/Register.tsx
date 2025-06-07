@@ -125,7 +125,7 @@ const Register = () => {
                                 <Input 
                                     {...field}
                                     label="Confirm Password" 
-                                    type={visiblePassword.passwordConfirm ? "password" : "text"} 
+                                    type={visiblePassword.passwordConfirm ? "text":"password"} 
                                     variant="bordered" 
                                     endContent={
                                         <button 
