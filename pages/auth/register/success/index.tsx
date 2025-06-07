@@ -4,7 +4,7 @@ import Register from "@/components/views/Register";
 const RegisterPage = () => {
     return (
         <AuthLayout title="Accara">
-            <Register />
+            <h1>Register Success</h1>
         </AuthLayout>
     );
 };
