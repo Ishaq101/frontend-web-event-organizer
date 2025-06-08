@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 const RegisterSuccess = () => {
     const router = useRouter();
   return (
-    <div className="flex flex-col items-center justify-center h-screen w-screen gap-4 p-4">
+    <div className="flex flex-col items-center justify-center h-5/6 w-screen gap-4 p-4">
         <Image
-          className="size-fit"
+          className="size-fit max-w-[100px]"
           src={`/images/general/logo.svg`}
         ></Image>
         <Image
-            className="size-fit"
+            className="size-fit max-h-[350px]"
             src="/images/illustration/email-send.svg"
             alt="success"
         >
