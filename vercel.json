@@ -1,17 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "pages/index.ts",
-        "use": "@vercel/node",
-        "config": { "includeFiles": ["/**"] }
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "pages/index.ts"
-      }
-    ]
-  }
-  
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "devCommand": "next dev"
+}
