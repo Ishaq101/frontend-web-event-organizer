@@ -10,7 +10,7 @@ const Activation = (props: PropsTypes) => {
     const router = useRouter();
     const { status } = props;
   return (
-    <div className="flex flex-col items-center justify-center h-5/6 w-screen gap-4 p-10">
+    <div className="flex flex-col items-center justify-center h-5/6 w-screen gap-4 lg:pt pt-20 lg:pb pb-20 p-15">
         <Image
           className="size-fit max-w-[130px]"
           src={`/images/general/logo.svg`}
