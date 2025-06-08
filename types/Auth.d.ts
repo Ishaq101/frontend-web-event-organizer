@@ -10,4 +10,8 @@ interface IActivation {
     code: string;
 }
 
-export type { IRegister, IActivation };
+interface SessionExtended extends Session {
+  accessToken?: string;
+}
+
+export type { IRegister, IActivation, SessionExtended };
